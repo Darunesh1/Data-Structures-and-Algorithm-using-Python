@@ -13,3 +13,11 @@ Write a Python function `prime_product(m)` that takes an integer `m` as input an
 
 ### Sample Input
 
+6
+
+
+### Sample Output
+
+True
+
+
