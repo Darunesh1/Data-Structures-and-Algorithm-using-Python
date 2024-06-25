@@ -2,8 +2,8 @@
 To learn Data Structures and Algorithm using Python
 
 
-# Prime Product Checker
-**WEEK 1**
+# Week 1
+**Prime Product Checker**
 
 A positive integer `m` is a prime product if it can be written as `p * q`, where `p` and `q` are both primes.
 
