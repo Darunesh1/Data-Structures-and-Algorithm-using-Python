@@ -17,3 +17,6 @@ def BinarySearch(n,l):
 l=eval(input())
 n=int(input())
 print(BinarySearch(n,l))
+
+
+# O(log(n))

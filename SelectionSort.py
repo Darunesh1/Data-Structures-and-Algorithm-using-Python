@@ -17,4 +17,8 @@ def SelectionSort(l):
 
 l=eval(input())
 print(SelectionSort(l))
+
+
+
+# O(n^2)
         
