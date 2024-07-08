@@ -54,7 +54,7 @@ def BFSLevel(Alist, v):
         level[i] = -1
         parent[i] = None
         
-    q = Queue()  # Instantiate the Queue
+    q = Queue()  
     q.addq(v)
     level[v] = 0
     
