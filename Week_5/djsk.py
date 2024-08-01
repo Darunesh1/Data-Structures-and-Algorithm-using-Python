@@ -23,3 +23,29 @@ def dijkstra(Wmat,s):
             distance[v]=min(distance[v],distance[nextn]+Wmat[nextn,v,1])
             
     return distance
+
+
+
+
+
+def dijkstralist(WList,s):
+    infinity= 1+ len(WList.keys())* max([d for u in WList.keys() for (v,d) in WList[u]])
+    vistited , distance ={},{}
+    for v in WList.keys():
+        vistited[v],distance[v]=True,infinity
+    distance[s]=0
+    for u in WList.keys():
+        nextd=min([distance[v] for v in WList.keys() if not vistited[v]])
+        
+        nextList=[v for v in WList.keys() if not vistited[v] and distance[v]==nextd]
+        
+        if nextList == []:
+            break
+        
+    nextn=min(nextList)
+    vistited[s]=True
+    for (v,d) in WList[nextn]:
+        if not vistited[v]:
+            distance[v]=min(distance[d],distance[nextn])
+            
+    return distance
